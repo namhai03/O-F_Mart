@@ -1,3 +1,3 @@
 # FriendlyFarm
 ## Giao diện
-![picture alt](http://via.placeholder.com/200x150 "Title is optional")
+![picture alt](https://github.com/namhai03/Rau_cu_shop/blob/main/image/full-layout.png "Giao diện trang web")
