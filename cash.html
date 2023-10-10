@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegetable</title>
+
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" /> -->
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="./css/cash.css">
+</head>
+<body>
+    <header class="header">
+
+        <a href="./index.html" class="logo"> <i class="fas fa-shopping-basket"></i> By Tiep </a>
+
+        <nav class="navbar">
+            
+            <a href="./index.html">home</a>
+            <a href="#features">features</a>
+            <a href="#products">products</a>
+            <a href="#categories">categories</a>
+            <a href="#review">review</a>
+            <a href="#blogs">blogs</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-user" id="login-btn"></div>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="shopping-cart">
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="image/cart-img-1.png" alt="">
+                <div class="content">
+                    <h3>watermelon</h3>
+                    <span class="price">$4.99/-</span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="image/cart-img-2.png" alt="">
+                <div class="content">
+                    <h3>onion</h3>
+                    <span class="price">$4.99/-</span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="image/cart-img-3.png" alt="">
+                <div class="content">
+                    <h3>chicken</h3>
+                    <span class="price">$4.99/-</span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+            <div class="total"> total : $19.69/- </div>
+            <a href="#" class="btn">checkout</a>
+        </div>
+
+        <form action="" class="login-form">
+            <h3>login now</h3>
+            <input type="email" placeholder="your email" class="box">
+            <input type="password" placeholder="your password" class="box">
+            <p>forget your password <a href="#">click here</a></p>
+            <p>don't have an account <a href="#">create now</a></p>
+            <input type="submit" value="login now" class="btn">
+        </form>
+
+    </header>
+
+    <div class="container-cart">
+
+        <section class="section-cart">
+            <div class="header-cart">
+                <ul>
+                    <li style="flex:2">Sản phẩm</li>
+                    <li style="flex:3">Thông tin sản phẩm</li>
+                    <li style="flex:2">Đơn giá</li>
+                    <li style="flex:1">Số lượng</li>
+                    <li style="flex:2">Thành tiền</li>
+                    <li style="flex:1">Xóa</li>
+                </ul>
+            </div>
+
+            <div class="cart-body">
+                <div class="item-cart">
+                    <div class="img-item canchinh">
+                        <img src="https://tse3.mm.bing.net/th?id=OIP.Cfn6WQVHZxrI_c-aJOcliQHaEZ&pid=Api&P=0&h=180" alt="">
+                    </div>
+                    <p class="item-name canchinh">Ca rốt</p>
+                    <div class="item-price canchinh">
+                        <span class="item-price-original">4.666 đ </span>
+                        <span class="item-price-sale">1.444 đ</span>
+                    </div>
+                    <div class="item-quantity canchinh">
+                        <input type="number" value="1">
+                    </div>
+                    
+                    <span class="item-total-price canchinh">5000 đ</span>
+                    <div class="delete-item canchinh">  
+                        <ion-icon name="trash-outline"></ion-icon>
+                    </div>
+                </div>
+
+            
+                <div class="item-cart">
+                    <div class="img-item canchinh">
+                        <img src="https://tse3.mm.bing.net/th?id=OIP.Cfn6WQVHZxrI_c-aJOcliQHaEZ&pid=Api&P=0&h=180" alt="">
+                    </div>
+                    <p class="item-name canchinh">Ca rốt</p>
+                    <div class="item-price canchinh">
+                        <span class="item-price-original">4.666 đ </span>
+                        <span class="item-price-sale">1.444 đ</span>
+                    </div>
+                    <div class="item-quantity canchinh">
+                        <input type="number" value="1">
+                    </div>
+                    
+                    <span class="item-total-price canchinh">5000 đ</span>
+                    <div class="delete-item canchinh">  
+                        <ion-icon name="trash-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="item-cart">
+                    <div class="img-item canchinh">
+                        <img src="https://tse3.mm.bing.net/th?id=OIP.Cfn6WQVHZxrI_c-aJOcliQHaEZ&pid=Api&P=0&h=180" alt="">
+                    </div>
+                    <p class="item-name canchinh">Ca rốt</p>
+                    <div class="item-price canchinh">
+                        <span class="item-price-original">4.666 đ </span>
+                        <span class="item-price-sale">1.444 đ</span>
+                    </div>
+                    <div class="item-quantity canchinh">
+                        <input type="number" value="1">
+                    </div>
+                    
+                    <span class="item-total-price canchinh">5000 đ</span>
+                    <div class="delete-item canchinh">  
+                        <ion-icon name="trash-outline"></ion-icon>
+                    </div>
+                </div>
+                
+                <div class="item-cart">
+                    <div class="img-item canchinh">
+                        <img src="https://tse3.mm.bing.net/th?id=OIP.Cfn6WQVHZxrI_c-aJOcliQHaEZ&pid=Api&P=0&h=180" alt="">
+                    </div>
+                    <p class="item-name canchinh">Ca rốt</p>
+                    <div class="item-price canchinh">
+                        <span class="item-price-original">4.666 đ </span>
+                        <span class="item-price-sale">1.444 đ</span>
+                    </div>
+                    <div class="item-quantity canchinh">
+                        <input type="number" value="1">
+                    </div>
+                    
+                    <span class="item-total-price canchinh">5000 đ</span>
+                    <div class="delete-item canchinh">  
+                        <ion-icon name="trash-outline"></ion-icon>
+                    </div>
+                </div>
+            
+                <div class="total-price">
+                    <span class="total-price-char">Tổng tiền:</span>
+                    <span class="total-price-num">95.346 đ</span>
+                </div>
+            </div>
+            <div class="order">
+                <a href=""><button class="order-0">TIẾP TỤC MUA HÀNG</button></a>
+                <button class="order-1">ĐẶT HÀNG</button>
+            </div>
+        </section>
+
+        
+        
+        
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    
+</body>
+</html>
