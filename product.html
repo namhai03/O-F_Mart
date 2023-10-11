@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product</title>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <link rel="stylesheet" href="product.css" />
+    <style>
+      .like-red {
+        color: red; /* Màu đỏ khi đã thích */
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">
+        <i class="fas fa-shopping-basket"></i> By HTH
+      </a>
+
+      <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#product">product</a>
+        <a href="#sale">sale</a>
+        <a href="#blogs">blogs</a>
+        <a href="#review">review</a>
+        <a href="#contact">contact</a>
+      </nav>
+
+      <div class="icons">
+        <!-- <div class="fas fa-bars" id="menu-btn"></div> -->
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+      </div>
+
+      <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="search here..." />
+        <label for="search-box" class="fas fa-search"></label>
+      </form>
+
+      <div class="shopping-cart">
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="image/cart-img-1.png" alt="" />
+          <div class="content">
+            <h3>watermelon</h3>
+            <span class="price">$4.99/-</span>
+            <span class="quantity">qty : 1</span>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="image/cart-img-2.png" alt="" />
+          <div class="content">
+            <h3>onion</h3>
+            <span class="price">$4.99/-</span>
+            <span class="quantity">qty : 1</span>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="image/cart-img-3.png" alt="" />
+          <div class="content">
+            <h3>chicken</h3>
+            <span class="price">$4.99/-</span>
+            <span class="quantity">qty : 1</span>
+          </div>
+        </div>
+        <div class="total">total : $19.69/-</div>
+        <a href="#" class="btn">checkout</a>
+      </div>
+
+      <form action="" class="login-form">
+        <h3>login now</h3>
+        <input type="email" placeholder="your email" class="box" />
+        <input type="password" placeholder="your password" class="box" />
+        <p>forget your password <a href="#">click here</a></p>
+        <p>don't have an account <a href="#">create now</a></p>
+        <input type="submit" value="login now" class="btn" />
+      </form>
+    </header>
+
+    <section class="product">
+      <div class="grid">
+        <div class="grid_row">
+          <div class="grid_column-2">
+            <nav class="category">
+              <h3 class="category__heading">
+                <i
+                  class="category__heading-icon fas fa-list-ul"
+                  style="color: #ff7800"></i>
+                Danh mục
+              </h3>
+              <ul class="category-list">
+                <li class="category-item">
+                  <a href="" class="category-item_link">Rau, củ , quả</a>
+                </li>
+                <li class="category-item">
+                  <a href="" class="category-item_link">Trái cây</a>
+                </li>
+                <li class="category-item">
+                  <a href="" class="category-item_link">Thịt, cá , hải sản</a>
+                </li>
+                <li class="category-item">
+                  <a href="" class="category-item_link"
+                    >Sữa và các chế phẩm từ sữa</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="grid_column-10">
+            <div class="filter-home">
+              <span class="filter-home_label">Sắp xếp theo</span>
+              <button class="filter-home_btn btn">Phổ biến</button>
+              <button class="filter-home_btn btn btn-primary">Mới nhất</button>
+              <button class="filter-home_btn btn">Bán chạy</button>
+              <div class="select-input">
+                <span class="select-input_label">Giá</span>
+                <i class="select-input_icon fas fa-angle-down"></i>
+                <ul class="select-input_list">
+                  <li class="select-input_item">
+                    <a href="" class="select-input_link">Giá: Thấp đến cao</a>
+                  </li>
+                  <li class="select-input_item">
+                    <a href="" class="select-input_link">Giá: Cao đến thấp</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="filter-home_page">
+                <span class="filter-home_page-num">
+                  <span class="filter-home_page-current">1</span>/14
+                </span>
+                <div class="filter-home_page-control">
+                  <a
+                    href=""
+                    class="filter-home_page-btn filter-home_page-btn-disabled">
+                    <i class="filter-home_page-icon fas fa-angle-left"></i>
+                  </a>
+                  <a href="" class="filter-home_page-btn">
+                    <i class="filter-home_page-icon fas fa-angle-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="product-home">
+              <div class="grid_row">
+                <div class="grid_column-2-4">
+                  <a class="product-home-item" href="">
+                    <div
+                      class="product-home-item_img"
+                      style="
+                        background-image: url(https://cdn.nguyenkimmall.com/images/companies/_1/tin-tuc/kinh-nghiem-meo-hay/n%E1%BA%A5u%20%C4%83n/khoai-mo-tim-ngon.jpg);
+                      "></div>
+                    <h4 class="product-home-item_name">
+                      Khoai mỡ Organic 300gr
+                    </h4>
+                    <div class="product-home-item_price">
+                      <span class="product-home-item_price-old">41.000đ</span>
+                      <span class="product-home-item_price-new">21.000đ</span>
+                    </div>
+                    <div class="product-home-item_action">
+                      <span
+                        class="product-home-item_action-like product-home-item_action-like--liked">
+                        <i
+                          class="product-home-item_action-like-icon-emty far fa-heart"></i>
+                        <i
+                          class="product-home-item_action-like-icon-fill fas fa-heart"></i>
+                      </span>
+                      <div class="product-home-item_rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                    <div class="product-home-item_origin">
+                      <span class="product-home-item_brand">HTH</span>
+                      <span class="product-home-item_origin-name"
+                        >Việt Nam</span
+                      >
+                    </div>
+                    <div class="product-home-item_favourite">
+                      <i class="fas fa-check"></i>
+                      <span> Yêu thích </span>
+                    </div>
+                    <div class="product-home-item_sale">
+                      <span class="product-home-item_sale-percent">43%</span>
+                      <span class="product-home-item_sale-lable">GIẢM</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="grid_column-2-4">
+                  <a class="product-home-item" href="">
+                    <div
+                      class="product-home-item_img"
+                      style="
+                        background-image: url(https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2021/7/15/930851/Cong-Dung-Rau-Cu-Qua.JPG);
+                      "></div>
+                    <h4 class="product-home-item_name">
+                      Khoai mỡ Organic 300gr
+                    </h4>
+                    <div class="product-home-item_price">
+                      <span class="product-home-item_price-old">41.000đ</span>
+                      <span class="product-home-item_price-new">21.000đ</span>
+                    </div>
+                    <div class="product-home-item_action">
+                      <span
+                        class="product-home-item_action-like product-home-item_action-like--liked">
+                        <i
+                          class="product-home-item_action-like-icon-emty far fa-heart"></i>
+                        <i
+                          class="product-home-item_action-like-icon-fill fas fa-heart"></i>
+                      </span>
+                      <div class="product-home-item_rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                    <div class="product-home-item_origin">
+                      <span class="product-home-item_brand">HTH</span>
+                      <span class="product-home-item_origin-name"
+                        >Việt Nam</span
+                      >
+                    </div>
+                    <div class="product-home-item_favourite">
+                      <i class="fas fa-check"></i>
+                      <span> Yêu thích </span>
+                    </div>
+                    <div class="product-home-item_sale">
+                      <span class="product-home-item_sale-percent">43%</span>
+                      <span class="product-home-item_sale-lable">GIẢM</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="grid_column-2-4">
+                  <a class="product-home-item" href="">
+                    <div
+                      class="product-home-item_img"
+                      style="
+                        background-image: url(https://cdn.nguyenkimmall.com/images/companies/_1/tin-tuc/kinh-nghiem-meo-hay/n%E1%BA%A5u%20%C4%83n/khoai-mo-tim-ngon.jpg);
+                      "></div>
+                    <h4 class="product-home-item_name">
+                      Khoai mỡ Organic 300gr
+                    </h4>
+                    <div class="product-home-item_price">
+                      <span class="product-home-item_price-old">41.000đ</span>
+                      <span class="product-home-item_price-new">21.000đ</span>
+                    </div>
+                    <div class="product-home-item_action">
+                      <span
+                        class="product-home-item_action-like product-home-item_action-like--liked">
+                        <i
+                          class="product-home-item_action-like-icon-emty far fa-heart"></i>
+                        <i
+                          class="product-home-item_action-like-icon-fill fas fa-heart"></i>
+                      </span>
+                      <div class="product-home-item_rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                    <div class="product-home-item_origin">
+                      <span class="product-home-item_brand">HTH</span>
+                      <span class="product-home-item_origin-name"
+                        >Việt Nam</span
+                      >
+                    </div>
+                    <div class="product-home-item_favourite">
+                      <i class="fas fa-check"></i>
+                      <span> Yêu thích </span>
+                    </div>
+                    <div class="product-home-item_sale">
+                      <span class="product-home-item_sale-percent">25%</span>
+                      <span class="product-home-item_sale-lable">GIẢM</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="grid_column-2-4">
+                  <a class="product-home-item" href="">
+                    <div
+                      class="product-home-item_img"
+                      style="
+                        background-image: url(https://cdn.nguyenkimmall.com/images/companies/_1/tin-tuc/kinh-nghiem-meo-hay/n%E1%BA%A5u%20%C4%83n/khoai-mo-tim-ngon.jpg);
+                      "></div>
+                    <h4 class="product-home-item_name">
+                      Khoai mỡ Organic 300gr
+                    </h4>
+                    <div class="product-home-item_price">
+                      <span class="product-home-item_price-old">41.000đ</span>
+                      <span class="product-home-item_price-new">21.000đ</span>
+                    </div>
+                    <div class="product-home-item_action">
+                      <span
+                        class="product-home-item_action-like product-home-item_action-like--liked">
+                        <i
+                          class="product-home-item_action-like-icon-emty far fa-heart"></i>
+                        <i
+                          class="product-home-item_action-like-icon-fill fas fa-heart"></i>
+                      </span>
+                      <div class="product-home-item_rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                    <div class="product-home-item_origin">
+                      <span class="product-home-item_brand">HTH</span>
+                      <span class="product-home-item_origin-name"
+                        >Việt Nam</span
+                      >
+                    </div>
+                    <div class="product-home-item_favourite">
+                      <i class="fas fa-check"></i>
+                      <span> Yêu thích </span>
+                    </div>
+                    <div class="product-home-item_sale">
+                      <span class="product-home-item_sale-percent">30%</span>
+                      <span class="product-home-item_sale-lable">GIẢM</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="grid_column-2-4">
+                  <a class="product-home-item" href="">
+                    <div
+                      class="product-home-item_img"
+                      style="
+                        background-image: url(https://cdn.nguyenkimmall.com/images/companies/_1/tin-tuc/kinh-nghiem-meo-hay/n%E1%BA%A5u%20%C4%83n/khoai-mo-tim-ngon.jpg);
+                      "></div>
+                    <h4 class="product-home-item_name">
+                      Khoai mỡ Organic 300gr
+                    </h4>
+                    <div class="product-home-item_price">
+                      <span class="product-home-item_price-old">41.000đ</span>
+                      <span class="product-home-item_price-new">21.000đ</span>
+                    </div>
+                    <div class="product-home-item_action">
+                      <span
+                        class="product-home-item_action-like product-home-item_action-like--liked">
+                        <i
+                          class="product-home-item_action-like-icon-emty far fa-heart"></i>
+                        <i
+                          class="product-home-item_action-like-icon-fill fas fa-heart"></i>
+                      </span>
+                      <div class="product-home-item_rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                    <div class="product-home-item_origin">
+                      <span class="product-home-item_brand">HTH</span>
+                      <span class="product-home-item_origin-name"
+                        >Việt Nam</span
+                      >
+                    </div>
+                    <div class="product-home-item_favourite">
+                      <i class="fas fa-check"></i>
+                      <span> Yêu thích </span>
+                    </div>
+                    <div class="product-home-item_sale">
+                      <span class="product-home-item_sale-percent">50%</span>
+                      <span class="product-home-item_sale-lable">GIẢM</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>groco <i class="fas fa-shopping-basket"></i></h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam,
+            saepe.
+          </p>
+          <div class="share">
+            <a
+              href="https://www.facebook.com/coder.hai/"
+              class="fab fa-facebook-f"></a>
+            <a
+              href="https://www.facebook.com/coder.hai/"
+              class="fab fa-twitter"></a>
+            <a
+              href="https://www.facebook.com/coder.hai/"
+              class="fab fa-instagram"></a>
+            <a
+              href="https://www.linkedin.com/in/haicoder/"
+              class="fab fa-linkedin"></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <h3>contact info</h3>
+          <a href="" class="links">
+            <i class="fas fa-phone"></i> +123-456-7890
+          </a>
+          <a href="#" class="links">
+            <i class="fas fa-phone"></i> +111-222-3333
+          </a>
+          <a href="#" class="links">
+            <i class="fas fa-envelope"></i> shaikhanas@gmail.com
+          </a>
+          <a href="#" class="links">
+            <i class="fas fa-map-marker-alt"></i> mumbai, india - 400104
+          </a>
+        </div>
+
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="#" class="links">
+            <i class="fas fa-arrow-right"></i> home
+          </a>
+          <a href="#" class="links">
+            <i class="fas fa-arrow-right"></i> features
+          </a>
+          <a href="#" class="links">
+            <i class="fas fa-arrow-right"></i> products
+          </a>
+          <a href="#" class="links">
+            <i class="fas fa-arrow-right"></i> categories
+          </a>
+          <a href="#" class="links">
+            <i class="fas fa-arrow-right"></i> review
+          </a>
+          <a href="#" class="links">
+            <i class="fas fa-arrow-right"></i> blogs
+          </a>
+        </div>
+
+        <div class="box">
+          <h3>newsletter</h3>
+          <p>subscribe for latest updates</p>
+          <input type="email" placeholder="your email" class="email" />
+          <input type="submit" value="subscribe" class="btn" />
+          <img src="image/payment.png" class="payment-img" alt="" />
+        </div>
+      </div>
+
+      <div class="credit">
+        created by <span> mr. web designer </span> | all rights reserved
+      </div>
+    </section>
+
+    footer section ends
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    custom js file link
+    <script src="js/script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var likeIcon = document.querySelector(
+          ".product-home-item_action-like-icon-emty"
+        );
+
+        likeIcon.addEventListener("click", function () {
+          likeIcon.classList.toggle("like-red");
+        });
+      });
+    </script>
+  </body>
+</html>
