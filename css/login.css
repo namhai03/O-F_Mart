@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h2 { 
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    font-weight: 200;
+}
+body {
+    display: flex;
+}
+.left {
+    flex-basis: 37.7%;
+}
+.left img {
+    width: 100%;
+}
+.right {
+    flex-basis: 62.3%;
+}
+.login-form {
+    margin: 100px 300px 0 300px;
+}
+.login-form h2 {
+
+}
