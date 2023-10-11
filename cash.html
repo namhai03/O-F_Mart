@@ -110,29 +110,8 @@
                     <div class="item-quantity canchinh">
                         <input type="number" value="1">
                     </div>
-                    
                     <span class="item-total-price canchinh">5000 đ</span>
-                    <div class="delete-item canchinh">  
-                        <ion-icon name="trash-outline"></ion-icon>
-                    </div>
-                </div>
-
-            
-                <div class="item-cart">
-                    <div class="img-item canchinh">
-                        <img src="https://tse3.mm.bing.net/th?id=OIP.Cfn6WQVHZxrI_c-aJOcliQHaEZ&pid=Api&P=0&h=180" alt="">
-                    </div>
-                    <p class="item-name canchinh">Ca rốt</p>
-                    <div class="item-price canchinh">
-                        <span class="item-price-original">4.666 đ </span>
-                        <span class="item-price-sale">1.444 đ</span>
-                    </div>
-                    <div class="item-quantity canchinh">
-                        <input type="number" value="1">
-                    </div>
-                    
-                    <span class="item-total-price canchinh">5000 đ</span>
-                    <div class="delete-item canchinh">  
+                    <div class="delete-item canchinh" onclick="deleteItem(this)">  
                         <ion-icon name="trash-outline"></ion-icon>
                     </div>
                 </div>
@@ -149,31 +128,30 @@
                     <div class="item-quantity canchinh">
                         <input type="number" value="1">
                     </div>
-                    
                     <span class="item-total-price canchinh">5000 đ</span>
-                    <div class="delete-item canchinh">  
+                    <div class="delete-item canchinh" onclick="deleteItem(this)">  
+                        <ion-icon name="trash-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="item-cart">
+                    <div class="img-item canchinh">
+                        <img src="https://tse3.mm.bing.net/th?id=OIP.Cfn6WQVHZxrI_c-aJOcliQHaEZ&pid=Api&P=0&h=180" alt="">
+                    </div>
+                    <p class="item-name canchinh">Ca rốt</p>
+                    <div class="item-price canchinh">
+                        <span class="item-price-original">4.666 đ </span>
+                        <span class="item-price-sale">1.444 đ</span>
+                    </div>
+                    <div class="item-quantity canchinh">
+                        <input type="number" value="1">
+                    </div>
+                    <span class="item-total-price canchinh">5000 đ</span>
+                    <div class="delete-item canchinh" onclick="deleteItem(this)">  
                         <ion-icon name="trash-outline"></ion-icon>
                     </div>
                 </div>
                 
-                <div class="item-cart">
-                    <div class="img-item canchinh">
-                        <img src="https://tse3.mm.bing.net/th?id=OIP.Cfn6WQVHZxrI_c-aJOcliQHaEZ&pid=Api&P=0&h=180" alt="">
-                    </div>
-                    <p class="item-name canchinh">Ca rốt</p>
-                    <div class="item-price canchinh">
-                        <span class="item-price-original">4.666 đ </span>
-                        <span class="item-price-sale">1.444 đ</span>
-                    </div>
-                    <div class="item-quantity canchinh">
-                        <input type="number" value="1">
-                    </div>
-                    
-                    <span class="item-total-price canchinh">5000 đ</span>
-                    <div class="delete-item canchinh">  
-                        <ion-icon name="trash-outline"></ion-icon>
-                    </div>
-                </div>
             
                 <div class="total-price">
                     <span class="total-price-char">Tổng tiền:</span>
@@ -192,6 +170,15 @@
     </div>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        function deleteItem(deleteButton) {
+            // Tìm phần tử cha (div có class "item-cart")
+            var itemCart = deleteButton.parentElement;
+            // Loại bỏ phần tử cha khỏi DOM
+            itemCart.remove();
+        }
+    </script>
 
     
 </body>
