@@ -129,24 +129,24 @@ input[type=email]:focus {
     transition: color 1s;
 }
 
-.privacy {
+.homepage {
     margin-top: 5px;
     position: relative;
-    font-size: 12px;
+    font-size: 15px;
     bottom: 0%;
 }
 
-.privacy a:link {
+.homepage a:link {
     color: #eaa05b;
     text-decoration: none;
 }
 
-.privacy a:visited {
+.homepage a:visited {
     color: #eaa05b;
     text-decoration: none;
 }
 
-.privacy a:hover {
+.homepage a:hover {
     color: #549494;
     transition: color 1s;
 }
