@@ -81,6 +81,7 @@ section{
 
 .header .navbar a:hover{
     color:var(--orange);
+    font-size: 2rem;
 }
 
 .header .icons div{
