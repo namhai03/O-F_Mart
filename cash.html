@@ -12,6 +12,7 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <link rel="stylesheet" href="./css/cash.css">
+    <script src="./js/cash.js"></script>
 </head>
 <body>
     <header class="header">
@@ -19,7 +20,6 @@
         <a href="./index.html" class="logo"> <i class="fas fa-shopping-basket"></i> By Tiep </a>
 
         <nav class="navbar">
-            
             <a href="./index.html">home</a>
             <a href="#features">features</a>
             <a href="#products">products</a>
@@ -30,47 +30,10 @@
 
         <div class="icons">
             <div class="fas fa-bars" id="menu-btn"></div>
-            <div class="fas fa-search" id="search-btn"></div>
-            <div class="fas fa-shopping-cart" id="cart-btn"></div>
             <div class="fas fa-user" id="login-btn"></div>
         </div>
 
-        <form action="" class="search-form">
-            <input type="search" id="search-box" placeholder="search here...">
-            <label for="search-box" class="fas fa-search"></label>
-        </form>
-
-        <div class="shopping-cart">
-            <div class="box">
-                <i class="fas fa-trash"></i>
-                <img src="image/cart-img-1.png" alt="">
-                <div class="content">
-                    <h3>watermelon</h3>
-                    <span class="price">$4.99/-</span>
-                    <span class="quantity">qty : 1</span>
-                </div>
-            </div>
-            <div class="box">
-                <i class="fas fa-trash"></i>
-                <img src="image/cart-img-2.png" alt="">
-                <div class="content">
-                    <h3>onion</h3>
-                    <span class="price">$4.99/-</span>
-                    <span class="quantity">qty : 1</span>
-                </div>
-            </div>
-            <div class="box">
-                <i class="fas fa-trash"></i>
-                <img src="image/cart-img-3.png" alt="">
-                <div class="content">
-                    <h3>chicken</h3>
-                    <span class="price">$4.99/-</span>
-                    <span class="quantity">qty : 1</span>
-                </div>
-            </div>
-            <div class="total"> total : $19.69/- </div>
-            <a href="#" class="btn">checkout</a>
-        </div>
+        
 
         <form action="" class="login-form">
             <h3>login now</h3>
@@ -100,9 +63,9 @@
             <div class="cart-body">
                 <div class="item-cart">
                     <div class="img-item canchinh">
-                        <img src="https://tse3.mm.bing.net/th?id=OIP.Cfn6WQVHZxrI_c-aJOcliQHaEZ&pid=Api&P=0&h=180" alt="">
+                        <img src="image/cart-img-1.png" alt="">
                     </div>
-                    <p class="item-name canchinh">Ca rốt</p>
+                    <p class="item-name canchinh">Dưa hấu</p>
                     <div class="item-price canchinh">
                         <span class="item-price-original">4.666 đ </span>
                         <span class="item-price-sale">1.444 đ</span>
@@ -118,9 +81,9 @@
 
                 <div class="item-cart">
                     <div class="img-item canchinh">
-                        <img src="https://tse3.mm.bing.net/th?id=OIP.Cfn6WQVHZxrI_c-aJOcliQHaEZ&pid=Api&P=0&h=180" alt="">
+                        <img src="image/cart-img-2.png" alt="">
                     </div>
-                    <p class="item-name canchinh">Ca rốt</p>
+                    <p class="item-name canchinh">Hành Tây</p>
                     <div class="item-price canchinh">
                         <span class="item-price-original">4.666 đ </span>
                         <span class="item-price-sale">1.444 đ</span>
@@ -136,9 +99,9 @@
 
                 <div class="item-cart">
                     <div class="img-item canchinh">
-                        <img src="https://tse3.mm.bing.net/th?id=OIP.Cfn6WQVHZxrI_c-aJOcliQHaEZ&pid=Api&P=0&h=180" alt="">
+                        <img src="image/cart-img-3.png" alt="">
                     </div>
-                    <p class="item-name canchinh">Ca rốt</p>
+                    <p class="item-name canchinh">Gà</p>
                     <div class="item-price canchinh">
                         <span class="item-price-original">4.666 đ </span>
                         <span class="item-price-sale">1.444 đ</span>
@@ -159,26 +122,17 @@
                 </div>
             </div>
             <div class="order">
-                <a href=""><button class="order-0">TIẾP TỤC MUA HÀNG</button></a>
-                <button class="order-1">ĐẶT HÀNG</button>
+                <a href="./index.html"><button class="order-0">TIẾP TỤC MUA HÀNG</button></a>
+                <a href="./payment.html"><button class="order-1">ĐẶT HÀNG</button></a>
             </div>
         </section>
 
-        
         
         
     </div>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-    <script>
-        function deleteItem(deleteButton) {
-            // Tìm phần tử cha (div có class "item-cart")
-            var itemCart = deleteButton.parentElement;
-            // Loại bỏ phần tử cha khỏi DOM
-            itemCart.remove();
-        }
-    </script>
 
     
 </body>
