@@ -51,17 +51,17 @@ body{
 }
 
 .header .logo i{
-    color:#fff;
+    color:white;
 }
 
 .header .navbar a{
     font-size: 1.7rem;
     margin:0 1rem;
-    color:#fff;
+    color:var(--black);
 }
 
 .header .navbar a:hover{
-    color:var(--black);
+    color:white;
 }
 
 .header .icons div{
@@ -241,9 +241,12 @@ body{
     display: flex;
     /* align-items: center; */
     /* justify-content: center; */
+<<<<<<< HEAD
     /* background: url(../image/banner-bg.webp) no-repeat; */
     background-position: center;
     background-size: cover;
+=======
+>>>>>>> 7c691d9943386ece6c8ac62cfa69213bc897cb39
     padding-top: 15rem;
     padding-bottom: 10rem;
 }
@@ -468,12 +471,28 @@ body{
     color: #555;
 }
 
+.product-home{
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+.row-2-4{
+    display: flex;
+    justify-content: space-between;
+}
 
 
 .grid_column-2-4{
     margin-right: .8rem;
-    background-color: white;
+    width: 23%;
+    margin-bottom: 20px;
     
+}
+
+.product-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .product-home-item{
@@ -495,12 +514,7 @@ body{
 }
 
 .product-home-item_img{
-    padding-top:75% ;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: top center;
-    /* border-color: white; */
-    /* width: calc((100%-16,6667%)/5); */
+   max-width: 100%;
 
 }
 .product-home-item_name{
@@ -510,18 +524,19 @@ body{
     line-height:1.8rem ;
     height: 3.6rem;
     overflow: hidden;
-    display: block ;
+    display: flex ;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
-    /* text-overflow: ellipsis; */
-    /* padding: 0 10px; */
-    margin: 10px 10px 4px;
+    text-align: center;
+    margin: 25px 10px 4px;
+    /* display-flex: justify; */
 }
 .product-home-item_price{
     display: flex ;
     margin-left: 10px;
     align-items: baseline;
+    justify-content: center;
 }
 .product-home-item_price-old{
     font-size: 1.4rem;
@@ -633,6 +648,29 @@ i.product-home-item_action-like-icon-fill{
     top: -4px;
     font-weight: 600;
     padding-left: 3px;
+}
+
+.product_page-link ul{
+    list-style: none;
+    display: flex;
+    
+}
+
+.nav-link{
+    align-items: center;
+}
+
+.page-item{
+    margin: 20px 15px 10px 10px;
+    /* border-radius: 10px; */
+}
+
+.page-link{
+    border-radius: 10px solid var(--black);
+    line-height: 35px;
+    width: 35px;
+    height: 35px;
+    /* justify-content:space-between; */
 }
 
 
