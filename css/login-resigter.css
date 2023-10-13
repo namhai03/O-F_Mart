@@ -130,7 +130,7 @@ input[type=email]:focus {
 }
 
 .homepage {
-    margin-top: 5px;
+    margin-top: 10px;
     position: relative;
     font-size: 15px;
     bottom: 0%;
