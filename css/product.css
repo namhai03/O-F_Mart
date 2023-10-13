@@ -241,6 +241,12 @@ body{
     display: flex;
     /* align-items: center; */
     /* justify-content: center; */
+<<<<<<< HEAD
+    /* background: url(../image/banner-bg.webp) no-repeat; */
+    background-position: center;
+    background-size: cover;
+=======
+>>>>>>> 7c691d9943386ece6c8ac62cfa69213bc897cb39
     padding-top: 15rem;
     padding-bottom: 10rem;
 }
