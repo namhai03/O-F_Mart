@@ -45,7 +45,7 @@ section{
 
 .heading span{
     background: var(--orange);
-    color:#fff;
+    color:var(--black);
     display: inline-block;
     padding:.5rem 3rem;
     clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
@@ -78,16 +78,18 @@ section{
     padding:2rem 9%;
     background:#fff;
     box-shadow: var(--box-shadow);
+    background-color: var(--orange);
 }
 
 .header .logo{
     font-size: 2.5rem;
     font-weight: bolder;
-    color:var(--black);
+    color:white;
+    /* padding-right: ; */
 }
 
 .header .logo i{
-    color:var(--orange);
+    color:white;
 }
 
 .header .navbar a{
@@ -97,7 +99,7 @@ section{
 }
 
 .header .navbar a:hover{
-    color:var(--orange);
+    color:white;
 }
 
 .header .icons div{
@@ -388,13 +390,13 @@ section{
     padding:.5rem 0;
 }
 
-.categories .box-container{
+.sale .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
     gap:1.5rem;
 }
 
-.categories .box-container .box{
+.sale .box-container .box{
     padding:3rem 2rem;
     border-radius: .5rem;
     background:#fff;
@@ -404,7 +406,7 @@ section{
     text-align: center;
 }
 
-.categories .box-container .box:hover{
+.sale .box-container .box:hover{
     outline:var(--outline-hover);
     outline-offset: 0rem;
 }
@@ -414,13 +416,13 @@ section{
     height:15rem;
 }
 
-.categories .box-container .box h3{
+.sale .box-container .box h3{
    font-size: 2rem;
    color:var(--black);
    line-height: 1.8;
 }
 
-.categories .box-container .box p{
+.sale .box-container .box p{
     font-size: 1.7rem;
     color:var(--light-color);
     line-height: 1.8;
