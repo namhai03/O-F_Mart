@@ -129,7 +129,6 @@ header {
     outline: 0;
     cursor: pointer;
 }
-
 .mid h1 {
     margin: 5rem 8rem .4rem 10rem;
     font-size: 5rem;
@@ -157,24 +156,43 @@ header {
     justify-content: space-between;
 }
 .mid .stories .left {
-    flex-basis: 60%;
-    margin: 5rem 10rem;
+    flex-basis: 50%;
+    margin: 5rem 0rem 5rem 10rem;
 }
 .mid .stories .left img {
-    width: 80%;
-    border-radius: 5rem;
+    width: 90%;
+    border-radius: 3rem;
 }
-/* .mid .stories .right {
-    flex-basis: 40%;
-    max-width: 20rem;
+.mid .stories .right {
+    flex-basis: 42%;
+    margin-right: 10rem;
+}
+.mid .stories .right .box {
+    margin: 5rem 0rem;
+    display: flex;
+    background-color: #c7bfbf;
+    border-radius: 2rem;
+    max-height: 20rem;
 }
 .mid .stories .right img {
-    width: 100%;
-    border-radius: 5rem; */
-/* } */
-.mid .stories .right .box {
+    width: 31.2%;
+    border-radius: 2rem;
+
+}
+.mid .stories .right .box div{
     margin: 0 10rem 3rem 0rem;
-    background-color: #666;
+}
+.mid .stories .right .box div h2 {
+    font-size: 2.5rem;
+    padding: 1.5rem 0 0.5rem 1.5rem;
+}
+.mid .stories .right .box div h3{
+    font-size: 1.7rem;
+    padding-left: 1.5rem;
+}
+.mid .stories .right .box div h4 {
+    font-size: 1rem;
+    padding: 1.5rem;
 }
 
 .blogs .box-container{
