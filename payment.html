@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh toán</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    
+    <link rel="stylesheet" href="./css/payment.css">
+    <script src="./js/payment.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="logo"> <i class="fas fa-shopping-basket"></i> By Tiep </a>
+
+        <div class="icons">
+            <a href="./cash.html"><div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <a href="./login.html"><div class="fas fa-user" id="login-btn"></div></a>
+        </div>
+
+    </header>
+    <main>
+        <section class="cart">
+            <h2>Giỏ hàng</h2>
+            <ul id="cart-items">
+                <!-- Điền thông tin sản phẩm ở đây -->
+            </ul>
+            <p>Tổng cộng: <span id="total-amount">0</span> VNĐ</p>
+        </section>
+        <section class="payment-form">
+            <h2>Thông tin thanh toán</h2>
+            <form id="payment-form">
+                <div class="form-group">
+                    <label for="name">Họ và tên:</label>
+                    <input type="text" id="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="card">Số thẻ:</label>
+                    <input type="text" id="card" required>
+                </div>
+                <button type="submit">Thanh toán</button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
