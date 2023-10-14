@@ -207,6 +207,13 @@ header {
     padding: 1.5rem;
 }
 
+
+.blogs>h1 {
+    font-size: 5rem;
+    margin-left: 10rem;
+    margin-top: 5rem;
+    color: #d16404;
+}
 .blogs .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -272,6 +279,27 @@ header {
     color:var(--light-color);
     font-size: 1.5rem;
     padding:.5rem 0;
+}
+.blogs .pages {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+.blogs .pages .button {
+    border: .1rem solid rgb(235, 47, 14);
+    background-color: #db6f10;
+    border-radius: 1rem;
+}
+.blogs .pages .button:hover {
+    background-color: #eee;
+}
+.blogs .pages .button:hover > p{
+    color: #130f40;
+}
+.blogs .pages .button p {
+    margin: .2rem 1.5rem;
+    font-size: 1.5rem;
+    color: white;
 }
 
 .footer{
