@@ -33,7 +33,7 @@ body{
     background:#eee;
 }
 section{
-    padding:2rem 9%;
+    padding:0;
 }
 
 .heading{
@@ -140,8 +140,6 @@ section{
 }
 
 .section-cart{
-    padding:20px;
-    margin: 0 120   px;
     display: flex;
     flex-direction: column;
 }
@@ -273,6 +271,10 @@ img{
         padding: 0rem;
     }
 
+    .header a{
+        font-size: 90%;
+    }
+
     .header-cart{
         display: none;
     }
@@ -287,6 +289,7 @@ img{
     section img{
         width: 80% !important;
     }
+
 
     .item-name{
         flex: 1.6;
@@ -322,11 +325,11 @@ img{
     }
 
     .container-cart{
-        padding:2rem 0;
+        padding:2rem ;
     }
 
     section{
-        padding:2rem;
+        padding:2rem 0;
         font-size: 90% ;
     }
     section img{
