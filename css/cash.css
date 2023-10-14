@@ -32,7 +32,9 @@ html{
 body{
     background:#eee;
 }
-
+section{
+    padding:2rem 9%;
+}
 
 .heading{
     text-align: center;
@@ -100,6 +102,10 @@ body{
     color:var(--black);
 }
 
+.header .icons{
+    display: flex;
+}
+
 .header .icons div{
     height: 4.5rem;
     width: 4.5rem;
@@ -118,49 +124,8 @@ body{
     color:#fff;
 }
 
-
-.header .login-form{
-    position: absolute;
-    top:110%; right:-110%;
-    width:35rem;
-    box-shadow: var(--box-shadow);
-    padding:2rem;
-    border-radius: .5rem;
-    background: #fff;
-    text-align: center;
-}
-
-.header .login-form.active{
-    right:2rem;
-    transition: .4s linear;
-}
-
-.header .login-form h3{
-    font-size: 2.5rem;
-    text-transform: uppercase;
-    color: var(--black);
-}
-
-.header .login-form .box{
-    width: 100%;
-    margin:.7rem 0;
-    background:#eee;
-    border-radius: .5rem;
-    padding:1rem;
-    font-size: 1.6rem;
-    color:var(--black);
-    text-transform: none;
-}
-
-.header .login-form p{
-    font-size: 1.4rem;
-    padding:.5rem 0;
-    color:var(--light-color);
-}
-
-.header .login-form p a{
-    color:var(--orange);
-    text-decoration: underline;
+.container-cart{
+    padding:2rem 9%;
 }
 
 .section .main-card-page{
@@ -175,18 +140,16 @@ body{
 }
 
 .section-cart{
-    padding:20px    ;
-    margin: 0 120px;
+    padding:20px;
+    margin: 0 120   px;
     display: flex;
     flex-direction: column;
 }
 
-
-
 .header-cart ul{
-    padding: 8px 0;
+    padding: 6px 0;
     display: flex;
-    justify-content:space-around;
+    justify-content:space-between;
     border: 1px solid #ddd;
 }
 
@@ -221,7 +184,7 @@ body{
     flex:2;
 }
 .item-quantity{
-    flex:1;
+    flex:1.5;
     
 }
 .item-quantity input{
@@ -299,6 +262,85 @@ img{
 }
 
 
+/* phone  */
+@media only screen and (max-width:500px){
 
+    html{
+        font-size: 55% !important;
+    }
+
+    .header{
+        padding: 0rem;
+    }
+
+    .header-cart{
+        display: none;
+    }
+
+    .container-cart{
+        padding:2rem 0;
+    }
+
+    section{
+        font-size: 57% !important;
+    }
+    section img{
+        width: 80% !important;
+    }
+
+    .item-name{
+        flex: 1.6;
+    }
+
+    .item-cart span{
+        font-size: 90%;
+    }
+
+    .order{
+        flex-direction: column;
+    }
+    .order-0{
+        width: 100%;
+    }
+    
+    .order-1{
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+}
+/* ipad */
+@media only screen and (max-width:810px){
+    
+    html{
+        font-size: 57%;
+    }
+
+    .header{
+        padding:2rem;
+        
+    }
+
+    .container-cart{
+        padding:2rem 0;
+    }
+
+    section{
+        padding:2rem;
+        font-size: 90% ;
+    }
+    section img{
+        width: 80%;
+    }
+
+    section .header-cart{
+        font-size: 83%;
+    }
+
+    section .item-price{
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 
