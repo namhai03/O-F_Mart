@@ -147,14 +147,23 @@ header {
     margin-right: 3rem;
     font-size: 1.5rem;
 }
-.mid .filter a:active {
-    text-decoration: underline .2rem;
-    text-underline-offset: .3rem;
+
+.all1{
+    cursor: pointer;
 }
 
-.mid .stories {
-    display: flex;
+.all1.active{
+    text-decoration: underline;
+    color: red;
+}
+
+.stories{
+    display: none;
     justify-content: space-between;
+}
+
+.stories.active{
+    display: flex;
 }
 
 .mid .stories .left {
@@ -182,7 +191,7 @@ header {
 .mid .stories .right .box {
     margin: 5rem 0rem;
     display: flex;
-    background-color: #c7bfbf;
+    background-color: #ddd8d8;
     border-radius: 2rem;
     height: 12.4rem;
 }
@@ -482,6 +491,4 @@ header {
     .footer .box-container .box .payment-img{
         margin: 2rem auto;
     }
-
-
 }
