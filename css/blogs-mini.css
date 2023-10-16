@@ -77,8 +77,8 @@ header {
 }
 
 .stories h1 {
-    font-size: 7rem;
-    margin-left: 6rem;
+    font-size: 5rem;
+    margin: 5rem 35rem 2rem 5rem;
 }
 .stories .info img {
     width: 7rem;
@@ -101,10 +101,13 @@ header {
     margin-bottom: .5rem;
     padding-bottom: .5rem;
 }
-.stories > img {
-    
+.stories>a>img {
+    width: 100%;
+    max-height: 100vh;
 }
-
+.bloder {
+    font-weight: bolder;
+}
 .content {
     display: flex;
 }
@@ -112,9 +115,192 @@ header {
     flex-basis: 10%;
 }
 .content .main {
-    flex-basis: 70%;
+    flex-basis: 65%;
 }
 .content .right {
     flex-basis: 20%;
 }
+.content p {
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+.content h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    padding: 1rem 0;
+}
+.content ul {
+    margin-left: 1rem;
+    padding-left: 1rem;
+}
+.content ul li {
+    font-size: 2rem;
+}
+.content img {
+    margin: 2rem 0;
+}
+.content .left {
+    margin: 10rem 0 0 3rem;
 
+}
+.content .left .icon{
+    width: 6rem;
+    height: 6rem;
+    margin-bottom: 1rem;
+    border-radius: 90%;
+    display:block;
+    font-size: 3rem;
+    background-color: #d3cccc;
+    padding-left: 1.6rem;
+    padding-top: .6rem;
+}
+.content .left .icon:hover {
+    background-color: #e96417;   
+}
+.react {
+    display: flex;
+    justify-content: space-between;
+}
+.react .react-left{
+    display: flex;
+}
+.react .react-left div{
+    display: flex;
+    justify-content:center ;
+}
+.react .react-left img {
+    border-radius: 90%;
+    width: 20%;
+    margin-right: 1rem;
+}
+.react .react-left .icon {
+    font-size: 1.5rem;
+    padding: 3.7rem 1rem 0 0;
+}
+.react .react-right .icon {
+    font-size: 2rem;
+    padding: 3rem 1rem 0 0;
+}
+.react .react-right .icon i{
+    padding-top: 3.7rem;
+}
+
+.content .right {
+    margin-left: 2rem;
+}
+.content .right .box a{
+    display: flex;
+}
+.content .right .box a:hover {
+    box-shadow: var(--box-shadow);
+    margin-left: 1rem;
+    border-radius: 2rem;
+
+}
+.content .right .box a img {
+    width: 50%;
+    border-radius: 1rem;
+}
+.content .right .box a p {
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+
+
+.footer{
+    background: #fff;
+    height: 35rem;
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap:1.5rem;
+    margin: 5rem 5rem 2rem 10rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px gray solid;
+}
+
+.footer .box-container .box h3{
+    font-size: 2.5rem;
+    color:var(--black);
+    padding:1rem 0;
+    text-transform: capitalize;
+}
+
+.footer .box-container .box h3 i{
+    color:var(--orange);
+}
+
+.footer .box-container .box .links{
+    display: block;
+    font-size: 1.5rem;
+    color:var(--light-color);
+    padding:1rem 0;
+}
+
+.footer .box-container .box .links i{
+    color:var(--orange);
+    padding-right: .5rem;
+}
+
+.footer .box-container .box .links:hover i{
+    padding-right: 2rem;
+}
+
+
+.footer .box-container .box p{
+    line-height: 1.8;
+    font-size: 1.5rem;
+    color:var(--light-color);
+    padding:1rem 0;
+}
+
+.footer .box-container .box .share a{
+    height:4rem;
+    width:4rem;
+    line-height:4rem;
+    border-radius: .5rem;
+    font-size: 2rem;
+    color:var(--black);
+    margin-right: .2rem;
+    background: #eee;
+    text-align: center;
+}
+
+.footer .box-container .box .share a:hover{
+    background: var(--orange);
+    color: #fff;
+}
+
+.footer .box-container .box .email{
+    width: 100%;
+    margin:.7rem 0;
+    padding:1rem;
+    border-radius: .5rem;
+    background: #eee;
+    font-size: 1.6rem;
+    color:var(--black);
+    text-transform: none;
+}
+
+.footer .box-container .box .payment-img{
+    margin-top: 2rem;
+    height: 3rem;
+    display: block;
+}
+
+.footer .credit{
+    text-align: center;
+    margin-top: 2rem;
+    padding:1rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color:var(--black);
+    border-top: var(--border);
+}
+
+.footer .credit span{
+    color:var(--orange);
+}
