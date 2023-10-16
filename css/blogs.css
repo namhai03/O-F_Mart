@@ -17,6 +17,7 @@
     text-decoration: none;
     list-style: none;
     transition: all .2s linear;
+    color: #130f40;
 }
 html{
     font-size: 62.5%;
@@ -86,11 +87,11 @@ header {
     color: #fff;
 }
 .banner-title{
+    color: #eee;
     font-size: 8rem;
     line-height: 1.2;
 }
 .banner-title span{
-
     color: rgb(238, 72, 21);
 }
 .banner p{
@@ -153,8 +154,8 @@ header {
 }
 
 .all1.active{
-    text-decoration: underline;
-    color: red;
+    text-decoration: underline .2rem;
+    color: rgb(218, 79, 14);
 }
 
 .stories{
@@ -171,13 +172,18 @@ header {
     margin: 5rem 0rem 5rem 10rem;
 }
 .mid .stories .left .inside {
-    background-color: rgba(219, 204, 194, 0.3);
+    background-color: rgba(46, 42, 40, 0.6);
     position: absolute;
     border-bottom-right-radius: 3rem;
     border-bottom-left-radius: 3rem;
-    top: 140.6rem;
+    top: 124.5rem;
     height: 20rem;
     width: 64.6rem;
+}
+.mid .stories .left .inside h2 {
+    color:#ebe9e4;
+    font-size: 3.2rem; 
+    padding: 2rem;
 }
 .mid .stories .left img {
     width: 90%;
