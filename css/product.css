@@ -160,7 +160,6 @@ body{
     color:var(--light-color);
     transform: translateY(-50%);
 }
-
 .header .shopping-cart .box .fa-trash:hover{
     color:var(--orange);
 }
@@ -241,18 +240,12 @@ body{
     display: flex;
     /* align-items: center; */
     /* justify-content: center; */
-<<<<<<< HEAD
-    /* background: url(../image/banner-bg.webp) no-repeat; */
-    background-position: center;
-    background-size: cover;
-=======
->>>>>>> 7c691d9943386ece6c8ac62cfa69213bc897cb39
     padding-top: 15rem;
     padding-bottom: 10rem;
 }
 
 .grid{
-    width: 120rem;
+    width: 100%;
     max-width: 100%;
     margin: 0 auto;
 }
@@ -260,12 +253,15 @@ body{
 .grid_row{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     margin-left: -.5rem;
     margin-right: -.5rem;
     position: relative;
 }
 
 .grid_column-2{
+    width: 30%;
+    height: 400px;
     margin-left: .5rem;
     margin-right: .5rem;
     width: 16.6667%;
@@ -273,9 +269,11 @@ body{
 }
 
 .grid_column-10{
+    width: 75%;
     margin-left: 0.9rem;
     margin-right: 0.5rem;
     width: calc(100%-16,6667%);
+    flex-wrap: wrap;
     /* background-color: white; */
     
 }
@@ -333,7 +331,6 @@ body{
     padding: 12px 22px;
     border-radius: 2px;
 }
-
 .filter-home_label{
     font-size: 1.4rem;
     color: #555;
@@ -512,7 +509,6 @@ body{
     transform: translateY(-2px);
 
 }
-
 .product-home-item_img{
    max-width: 100%;
 
@@ -657,20 +653,35 @@ i.product-home-item_action-like-icon-fill{
 }
 
 .nav-link{
-    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .page-item{
     margin: 20px 15px 10px 10px;
-    /* border-radius: 10px; */
+/* border-radius: 10px; */
+    font-size: 15px;
+    border:1px solid gray;
+    border-radius: 10px;
+}
+
+.page-item:hover{
+    background-color: var(--orange);
+    color:white;
+}
+
+.page-item:hover a{
+    /* background-color: var(--orange); */
+    color:white;
 }
 
 .page-link{
-    border-radius: 10px solid var(--black);
     line-height: 35px;
     width: 35px;
     height: 35px;
     /* justify-content:space-between; */
+    padding: 10px;
 }
 
 
@@ -840,4 +851,3 @@ i.product-home-item_action-like-icon-fill{
     }
 
 }
-
