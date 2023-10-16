@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 
 :root{
@@ -365,9 +365,7 @@ section{
     font-weight: bold;
   }
 
-  .type span{
-    /* font-weight: 300; */
-  }
+
 
   .btn {
     display: inline-block;
@@ -553,7 +551,6 @@ section{
     }
 
 }
-=======
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 
 :root{
@@ -625,7 +622,7 @@ section{
 }
 
 .header{
-    position: fixed;
+    position:sticky;
     top:0; left:0; right: 0;
     z-index: 1000;
     display: flex;
@@ -833,18 +830,14 @@ section{
 
 .product-container {
     display: flex;
-    /* max-width: 1200px; */
+    max-width: 1200px;
     margin: 20px auto;
+    
   }
 
   .product-image {
     flex: 1;
     position: relative;
-  }
-
-  .product-image img {
-    width: 100%;
-    height: auto;
   }
 
   .thumbnail-container {
@@ -855,7 +848,7 @@ section{
 
   .thumbnail {
     width: calc(100%/4);
-    /* height: auto; */
+    height: 81px;
     cursor: pointer;
     transition: opacity 0.3s ease-in-out; /* Thêm hiệu ứng chuyển động */
   }
@@ -1072,4 +1065,4 @@ section{
     }
 
 }
->>>>>>> e510b224d291fc3e9071ca313e2d6253734d5722
+
