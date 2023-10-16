@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Mooli&family=Poppins:wght@200;400;500;600&display=swap');
+
+:root{
+    --orange:#ff7800;
+    --black:#130f40;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+    --border:.2rem solid rgba(0,0,0,.1);
+    --outline:.1rem solid rgba(0,0,0,.1);
+    --outline-hover:.2rem solid var(--black);
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    transition: all .2s linear;
+    color: #130f40;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+body{
+    background:#eee;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+.header .menu {
+    top:0; left: 0; right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 5%;   
+}
+
+.header .menu .logo {
+    font-size: 4rem;
+    font-weight: bolder;
+    color: (var(--black));
+}
+.header .menu .logo i {
+    color: var(--orange);
+}
+.header .menu .navbar a {
+    font-size: 2rem;
+    margin: 0 1rem;
+
+}
+.header .menu .navbar a:hover {
+    color: var(--orange);
+    font-size: 2.5em;
+}
+.header .menu .icons div {
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    background-color: #eee;
+    color: var(--black);
+    font-size: 2rem;
+    margin-right: .3rem;
+    text-align: center;
+}
+.header .menu .icons div:hover {
+    color: white;
+    background-color: #ff7800;
+}
+
+.stories h1 {
+    font-size: 7rem;
+    margin-left: 6rem;
+}
+.stories .info img {
+    width: 7rem;
+    border-radius: 90%;
+    margin-left: 6rem;
+}
+.stories .info {
+    display: flex;
+    margin-bottom: 2rem;
+}
+.stories .info .author {
+    margin: 1rem 0 0 3rem;
+}
+
+.stories .info .author p {
+    font-size: 1.2rem;
+}
+.stories .info .author a p {
+    border-bottom: #130f40 .1rem dashed;
+    margin-bottom: .5rem;
+    padding-bottom: .5rem;
+}
+.stories a img {
+
+}
+
