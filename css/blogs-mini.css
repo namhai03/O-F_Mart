@@ -15,7 +15,7 @@
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
-    list-style: none;
+
     transition: all .2s linear;
     color: #130f40;
 }
@@ -101,7 +101,20 @@ header {
     margin-bottom: .5rem;
     padding-bottom: .5rem;
 }
-.stories a img {
+.stories > img {
+    
+}
 
+.content {
+    display: flex;
+}
+.content .left {
+    flex-basis: 10%;
+}
+.content .main {
+    flex-basis: 70%;
+}
+.content .right {
+    flex-basis: 20%;
 }
 
