@@ -204,14 +204,14 @@ header {
 .mid .stories .right img {
     width: 31.2%;
     border-radius: 2rem;
-
+    flex-basis: 40%;
 }
 .mid .stories .right .box div{
     margin: 0 10rem 3rem 0rem;
 }
 .mid .stories .right .box div h2 {
-    font-size: 2.5rem;
-    padding: 1.5rem 0 0.5rem 1.5rem;
+    font-size: 2rem;
+    padding: .8rem 0 0.5rem 1.5rem;
 }
 .mid .stories .right .box div h3{
     font-size: 1.7rem;
