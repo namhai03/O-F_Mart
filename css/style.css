@@ -93,6 +93,7 @@ section{
 }
 
 .header .navbar a{
+    text-transform: none;
     font-size: 1.7rem;
     margin:0 1rem;
     color:var(--black);
@@ -294,13 +295,15 @@ section{
 .home .content h3{
     color:var(--black);
     font-size: 3rem;
+    text-transform: none;
 }
 
 .home .content h3 span{
-    color:var(--orange);
+    color:orangered;
 }
 
 .home .content p{
+    text-transform: none;
     color:var(--light-color);
     font-size: 1.7rem;
     padding:1rem 0;
