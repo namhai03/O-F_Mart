@@ -460,7 +460,13 @@ section{
     line-height: 1.8;
     color:var(--light-color);
     font-size: 1.5rem;
+    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
 }
+
 
 .review .review-slider .box h3{
     padding-bottom: .5rem;
