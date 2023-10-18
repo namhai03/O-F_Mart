@@ -169,8 +169,6 @@ body{
     color:var(--light-color);
     transform: translateY(-50%);
 }
-<<<<<<< HEAD
-=======
 .header .shopping-cart .box .fa-trash:hover{
     color:var(--orange);
 }
@@ -1706,4 +1704,24 @@ i.product-home-item_action-like-icon-fill{
         margin: 2rem auto;
     }
 
+}
+
+#scrollToTopBtn {
+
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 10px;
+    border: none;
+    outline: none;
+    background-color: #e27f2eb2;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 90%;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #d85d0c;
 }

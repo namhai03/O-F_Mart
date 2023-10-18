@@ -379,6 +379,10 @@
 
     </section>
 
+    <div>
+      <button onclick="scrollToTop()" id="scrollToTopBtn" title="Lên đầu trang"><i class="fa-solid fa-circle-up" style="font-size: 2rem; color:rgba(243, 237, 237, 0.8)"></i></button>
+    </div>
+    
     <section class="footer">
       <div class="box-container">
         <div class="box">
@@ -458,9 +462,29 @@
 
           this.classList.add("active");
           pane.classList.add("active");
-
         };
-
+      });
+      window.addEventListener('scroll', function() {
+        var header = document.querySelector('.header');
+        header.classList.toggle('sticky', window.scrollY > 0);
+      });
+    
+      var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+      var rootElement = document.documentElement;
+    
+      function scrollToTop() {
+        rootElement.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      }
+    
+      window.addEventListener("scroll", function() {
+        if (window.scrollY > 800) {
+          scrollToTopBtn.style.display = "block";
+        } else {
+          scrollToTopBtn.style.display = "none";
+        }
       });
     </script>
     

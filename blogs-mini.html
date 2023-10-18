@@ -213,6 +213,10 @@
 
     </div>
 
+    <div>
+        <button onclick="scrollToTop()" id="scrollToTopBtn" title="Lên đầu trang"><i class="fa-solid fa-circle-up" style="font-size: 2rem; color:rgba(243, 237, 237, 0.8)"></i></button>
+    </div>
+
     <section class="footer">
         <div class="box-container">
           <div class="box">
@@ -280,7 +284,32 @@
             <img src="image/payment.png" class="payment-img" alt="" />
           </div>
         </div>
-      </section>
+    </section>
+
+    <script>
+        window.addEventListener('scroll', function() {
+        var header = document.querySelector('.header');
+        header.classList.toggle('sticky', window.scrollY > 0);
+        });
+    
+        var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+        var rootElement = document.documentElement;
+    
+        function scrollToTop() {
+        rootElement.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+        }
+    
+        window.addEventListener("scroll", function() {
+        if (window.scrollY > 500) {
+            scrollToTopBtn.style.display = "block";
+        } else {
+            scrollToTopBtn.style.display = "none";
+        }
+        });
+    </script>
 
     
 
