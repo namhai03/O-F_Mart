@@ -355,6 +355,7 @@ body{
     color: #555;
     margin-right: 16px;
     /* background-color: white; */
+    
 }
 
 .filter-home_btn{
@@ -362,6 +363,7 @@ body{
     margin-right: 12px;
     background-color: white;
     font-size: 1.4rem;
+    padding:.6rem 3rem;
 
 }
 
@@ -388,6 +390,7 @@ body{
 
 .select-input_label{
     font-size: 1.4rem;
+    
 }
 
 .select-input_icon{
