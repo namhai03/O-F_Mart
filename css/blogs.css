@@ -169,21 +169,26 @@ header {
 
 .mid .stories .left {
     flex-basis: 50%;
-    margin: 5rem 0rem 5rem 10rem;
+    padding: 5rem 0rem 5rem 10rem;
 }
 .mid .stories .left .inside {
-    background-color: rgba(46, 42, 40, 0.6);
-    position: absolute;
+    position: relative;
     border-bottom-right-radius: 3rem;
     border-bottom-left-radius: 3rem;
-    top: 124.5rem;
-    height: 20rem;
-    width: 64.6rem;
+    margin-top: -11rem;
+    height: 10rem;
+    width: 90%;
 }
 .mid .stories .left .inside h2 {
     color:#ebe9e4;
-    font-size: 3.2rem; 
-    padding: 2rem;
+    position: absolute;
+    font-size: 2.2rem; 
+    background-color: rgba(46, 42, 40, 0.6);
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    
 }
 .mid .stories .left img {
     width: 90%;
