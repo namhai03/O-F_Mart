@@ -281,7 +281,7 @@ body{
 }
 
 .grid_column-2{
-    width: 30%;
+    width: 25%;
     height: 400px;
     margin-left: .5rem;
     margin-right: .5rem;
@@ -293,9 +293,7 @@ body{
     width: 75%;
     margin-left: 0.9rem;
     margin-right: 0.5rem;
-    width: calc(100%-16,6667%);
     flex-wrap: wrap;
-    /* background-color: white; */
     
 }
 
