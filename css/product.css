@@ -566,36 +566,6 @@ body{
     color:var(--orange);
     margin-left: 6px;
 }
-.product-home-item_action{
-    display: flex;
-    justify-content: space-between;
-    margin: 6px 10px 0;
-}
-.product-home-item_action-like{
-    font-size: 1.4rem;
-}
-i.product-home-item_action-like-icon-fill{
-    display: none;
-    /* color: #F63D30; */
-}
-
-.product-home-item_action-like--liked .product-home-item_action-like-icon-fill{
-    display: inline-block;
-}
-
-.product-home-item_action-like--liked .product-home-item_action-like-icon-emty{
-    display: none ;
-    
-}
-.product-home-item_rating{
-    font-size: 1rem;
-    color: #d5d5d5;
-}
-
-.product-home-item_origin{
-    justify-content: space-between;
-    color: black ;
-}
 
 .product-home-item_favourite{
     position: absolute;
