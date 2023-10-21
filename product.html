@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./image/logo.ico" type="image/x-icon">
-    <title>Sản phẩm</title>
+    <title>Product</title>
 
     <link
       rel="stylesheet"
@@ -15,7 +14,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 
     <link rel="stylesheet" href="./css/product.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
       .like-red {
         color: red; /* Màu đỏ khi đã thích */
@@ -41,9 +39,7 @@
         <!-- <div class="fas fa-bars" id="menu-btn"></div> -->
         <div class="fas fa-search" id="search-btn"></div>
         <div class="fas fa-shopping-cart" id="cart-btn"></div>
-        <a href="./login.html"
-          ><div class="fas fa-user" id="login-btn"></div
-        ></a>
+        <div class="fas fa-user" id="login-btn"></div>
       </div>
 
       <form action="" class="search-form">
@@ -80,11 +76,17 @@
           </div>
         </div>
         <div class="total">Tổng :340.000đ</div>
-        <a href="./cash.html" class="btn">giỏ hàng</a>
-        <a href="./payment.html" class="btn">Thanh toán</a>
+        <a href="#" class="btn">Tiến hành thanh toán</a>
       </div>
 
-
+      <form action="" class="login-form">
+        <h3>login now</h3>
+        <input type="email" placeholder="your email" class="box" />
+        <input type="password" placeholder="your password" class="box" />
+        <p>forget your password <a href="#">click here</a></p>
+        <p>don't have an account <a href="#">create now</a></p>
+        <input type="submit" value="login now" class="btn" />
+      </form>
     </header>
 
     <section class="product">
@@ -119,13 +121,13 @@
           <div class="grid_column-10">
             <div class="filter-home">
               <span class="filter-home_label">Sắp xếp theo</span>
-              <button class="filter-home_btn btn">Phổ biến</button>
+              <button class="filter-home_btn btn1">Phổ biến</button>
               <button
-                class="filter-home_btn btn btn-primary"
+                class="filter-home_btn btn1 btn-primary"
                 style="background-color: #ff7800">
                 Mới nhất
               </button>
-              <button class="filter-home_btn btn">Bán chạy</button>
+              <button class="filter-home_btn btn1">Bán chạy</button>
               <div class="select-input">
                 <span class="select-input_label">Giá</span>
                 <i class="select-input_icon fas fa-angle-down"></i>
@@ -493,10 +495,6 @@
       </div>
     </section>
 
-    <div>
-      <button onclick="scrollToTop()" id="scrollToTopBtn" title="Lên đầu trang"><i class="fa-solid fa-circle-up" style="font-size: 2rem; color:rgba(243, 237, 237, 0.8)"></i></button>
-    </div>
-
     <section class="footer">
       <div class="box-container">
         <div class="box">
@@ -570,7 +568,9 @@
         </div>
       </div>
 
-
+      <div class="credit">
+        Được tạo bởi <span> HTH designer </span> | đã đăng kí bản quyền
+      </div>
     </section>
 
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
@@ -587,30 +587,6 @@
           likeIcon.classList.toggle("like-red");
         });
       });
-
-      window.addEventListener('scroll', function() {
-      var header = document.querySelector('.header');
-      header.classList.toggle('sticky', window.scrollY > 0);
-      });
-  
-      var scrollToTopBtn = document.getElementById("scrollToTopBtn");
-      var rootElement = document.documentElement;
-  
-      function scrollToTop() {
-      rootElement.scrollTo({
-          top: 0,
-          behavior: "smooth"
-      });
-      }
-  
-      window.addEventListener("scroll", function() {
-      if (window.scrollY > 500) {
-          scrollToTopBtn.style.display = "block";
-      } else {
-          scrollToTopBtn.style.display = "none";
-      }
-      });
-
     </script>
   </body>
 </html>
