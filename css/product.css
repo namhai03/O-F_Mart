@@ -371,7 +371,6 @@ body{
  
 
 .select-input{
-    height:30px ;
     min-width: 200px;
     padding: 0 12px;
     border-radius: 2px;
@@ -380,6 +379,7 @@ body{
     align-items: center;
     justify-content: space-between;
     position: relative;
+    /* font-size: 1.4rem; */
 }
 
 .select-input:hover .select-input_list{
@@ -388,6 +388,8 @@ body{
 
 .select-input_label{
     font-size: 1.4rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
     
 }
 
